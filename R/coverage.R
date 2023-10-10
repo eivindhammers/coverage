@@ -186,8 +186,7 @@ coverage <- function(fit = NULL,
     theme(legend.position = "none",
         axis.text.x = element_text(size = base_size * 0.8, angle = 330, hjust = 0, colour = "grey50"),
         axis.text.y = element_text(size = 45 / (sqrt(length(unique(coverage_df[, 1]))))),
-        plot.margin = unit(c(5, 15, 5, 5), "pt")) +
-    theme(...)
+        plot.margin = unit(c(5, 15, 5, 5), "pt"))
 
   return(print(p))
 }
